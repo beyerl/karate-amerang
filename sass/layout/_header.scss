@@ -1,0 +1,112 @@
+.header {
+    height: 85vh;
+    position: relative;
+
+    @include media(xs){
+        height: 30vh;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 10;
+
+        @include media(xs) {
+            width: 80%;
+        }
+    }
+
+    &__carousel {
+        height: inherit;
+        width: 100%;
+    }
+
+    &__carousel-inner {
+        height: inherit;
+        width: 100%;
+    }
+
+    &__carousel-item {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+
+
+        &--1 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-tertiary, .5),
+                rgba($color-tertiary-dark, .5)), 
+                url(../assets/karate.jpg);
+
+                /*@include media(md) {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-tertiary, .5),
+                        rgba($color-tertiary-dark, .5)), 
+                        url(../assets/art-cotton-crochet-2070676-md.jpg);
+                }
+
+                @include media(xs) {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-tertiary, .5),
+                        rgba($color-tertiary-dark, .5)), 
+                        url(../assets/art-cotton-crochet-2070676-sm.jpg);
+                }*/
+        }
+
+        &--2 {
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-tertiary, .5),
+                rgba($color-tertiary-dark, .5)), 
+                url(../assets/maxresdefault.jpg);
+
+                /*@include media(md) {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-tertiary, .5),
+                        rgba($color-tertiary-dark, .5)), 
+                        url(../assets/cloth-colors-cotton-365067-md.jpg);
+                }
+
+                @include media(xs) {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-tertiary, .5),
+                        rgba($color-tertiary-dark, .5)), 
+                        url(../assets/cloth-colors-cotton-365067-sm.jpg);
+                }*/
+        }
+
+        &--3 {
+            background-position: 0% 0%;
+            background-image: linear-gradient(
+                to right bottom,
+                rgba($color-tertiary, .5),
+                rgba($color-tertiary-dark, .5)), 
+                url(../assets/black-belt-894190_1920.jpg);
+
+                /*@include media(md) {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-tertiary, .5),
+                        rgba($color-tertiary-dark, .5)), 
+                        url(../assets/weaving-loom-2571179_1280-md-edit.jpg);
+                }
+
+                @include media(xs) {
+                    background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color-tertiary, .5),
+                        rgba($color-tertiary-dark, .5)), 
+                        url(../assets/weaving-loom-2571179_640-sm-edit.jpg);
+                }*/
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.btn {
+    font-size: $default-font-size;
+
+    &-primary {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        padding: .5rem 2rem;
+
+        &:hover {
+            background-color: $color-primary-dark;
+            border-color: $color-primary-dark;
+        }
+
+        &:not(:disabled):not(.disabled):active {
+            background-color: $color-primary;
+            border-color: $color-primary;
+        }
+    }
+
+    &-secondary {
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+        padding: .5rem 2rem;
+
+        &:hover {
+            background-color: $color-secondary-dark;
+            border-color: $color-secondary-dark;
+        }
+
+        &:not(:disabled):not(.disabled):active {
+            background-color: $color-secondary;
+            border-color: $color-secondary;
+        }
+    }
+
+    &-tertiary {
+        background-color: $color-tertiary;
+        border-color: $color-tertiary;
+        padding: .5rem 2rem;
+
+        &:hover {
+            background-color: $color-tertiary-dark;
+            border-color: $color-tertiary-dark;
+        }
+
+        &:not(:disabled):not(.disabled):active {
+            background-color: $color-tertiary;
+            border-color: $color-tertiary;
+        }
+    }
+}

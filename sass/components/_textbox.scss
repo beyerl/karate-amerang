@@ -1,0 +1,28 @@
+[class^="textbox"] {
+    padding: $distance-m;
+}
+
+.textbox {
+    &--primary {
+        color: $color-white;
+        background-color: $color-primary;
+    }
+
+    &--secondary {
+        color: $color-white;
+        background-color: $color-secondary;
+    }
+    
+    &--tertiary {
+        color: $color-black;
+        background-color: $color-tertiary;
+    }
+    
+    &--white {
+        color: $color-black;
+        background-color: $color-white;
+    }
+}
+
+
+

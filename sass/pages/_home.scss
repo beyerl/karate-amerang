@@ -1,0 +1,35 @@
+.section-team {
+    position: relative;
+    padding: 15rem 0;
+
+    @include media(md) {
+        padding: 10rem 0;
+    }
+}
+
+.section-location {
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-grey-light-2, .7),
+        rgba($color-grey-light-1, .7)), 
+        url(../assets/karate-1665606_1920.jpg);
+
+        
+    @include media(md) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-grey-light-2, .7),
+            rgba($color-grey-light-1, .7)),  
+            url(../assets/karate-1665606_1920.jpg);
+    }
+
+    @include media(xs) {
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-grey-light-2, .7),
+            rgba($color-grey-light-1, .7)), 
+            url(../assets/karate-1665606_1920.jpg);
+    }
+}
+

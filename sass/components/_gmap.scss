@@ -1,0 +1,40 @@
+.gmap {
+    position: relative;
+    height: 45rem;
+
+    @include media(xs){
+        position: static;
+        height: auto;   
+    }
+
+    &__googlemap {
+        height: 35rem; 
+        width: 55%; 
+        background-color: orangered; //displays if map does not render
+        box-shadow: 0 3rem 6rem rgba($color-black, .1);
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+
+        @include media(xs){
+            position: static;
+            width: 100%;
+        }
+    }
+
+    &__address-box {
+        width: 55%;
+        box-shadow: 0 3rem 6rem rgba($color-black, .1);
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include media(xs){
+            position: static;
+            width: 100%;
+        }
+    }
+}
